@@ -972,6 +972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1060105696}
   - component: {fileID: 1060105697}
+  - component: {fileID: 1060105698}
   m_Layer: 5
   m_Name: GenProgBar
   m_TagString: Untagged
@@ -998,8 +999,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23.976105, y: -49.14891}
-  m_SizeDelta: {x: 160, y: 20}
+  m_AnchoredPosition: {x: 0.0013885, y: -54.617}
+  m_SizeDelta: {x: 270.89, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1060105697
 MonoBehaviour:
@@ -1052,6 +1053,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1060105698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060105695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63896c6cf2f1b94782911e04faee90b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  genProgressBar: {fileID: 0}
 --- !u!1 &1096123164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,7 +1510,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382792029}
-  m_LocalRotation: {x: 0.116760485, y: -0.000000017088691, z: 0.0000000020090254, w: 0.9931601}
+  m_LocalRotation: {x: 0.116760485, y: 0.000000017088693, z: -0.0000000020090256, w: 0.9931601}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1633,7 +1647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b61aa389c91a3f489eb488aa8e24273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBar: {fileID: 0}
+  progressBar: {fileID: 1060105698}
   generatorStats: {fileID: 827939872}
   isNearGen: 0
   isReparingGen: 0
@@ -1976,10 +1990,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7475327440574155572, guid: c16b36fbb46f2bc43ac1e7d12efd74f7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 7475327441137522891, guid: c16b36fbb46f2bc43ac1e7d12efd74f7, type: 3}
+      propertyPath: genProgressBarObj
+      value: 
+      objectReference: {fileID: 1060105695}
     - target: {fileID: 7475327441137522891, guid: c16b36fbb46f2bc43ac1e7d12efd74f7, type: 3}
       propertyPath: genRepairController
       value: 
@@ -2031,14 +2045,6 @@ PrefabInstance:
     - target: {fileID: 7475327441137522932, guid: c16b36fbb46f2bc43ac1e7d12efd74f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7475327441450884530, guid: c16b36fbb46f2bc43ac1e7d12efd74f7, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7475327442377334176, guid: c16b36fbb46f2bc43ac1e7d12efd74f7, type: 3}
-      propertyPath: m_Name
-      value: GenCanvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c16b36fbb46f2bc43ac1e7d12efd74f7, type: 3}
