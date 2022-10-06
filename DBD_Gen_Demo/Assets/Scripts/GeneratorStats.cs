@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GeneratorStats : MonoBehaviour
 {
     public GenRepairController genRepairController;
     
-    public GameObject genProgressBar;
+    public GameObject genProgressBarObj;
     
     public float genRepair = 0f;
     public float genMaxRepair = 100f;
@@ -15,7 +16,7 @@ public class GeneratorStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        genProgressBar = transform.Find("GenCanvas").GetChild(0).gameObject;
+        
     }
 
     // Update is called once per frame
@@ -25,11 +26,11 @@ public class GeneratorStats : MonoBehaviour
 
         if (genRepairController.isNearGen)
         {
-            genProgressBar.SetActive(true);
+            genProgressBarObj.SetActive(true);
         }
         else
         {
-            genProgressBar.SetActive(false);
+            genProgressBarObj.SetActive(false);
         }
     }
 }
