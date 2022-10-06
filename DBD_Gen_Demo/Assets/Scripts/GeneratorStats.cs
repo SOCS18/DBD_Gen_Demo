@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class GeneratorStats : MonoBehaviour
 {
-    public float genRepair = 0;
-    public float genMaxRepair = 100;
+    public GenRepairController genRepairController;
+    
+    public GameObject genProgressBar;
+    
+    public float genRepair = 0f;
+    public float genMaxRepair = 100f;
+    public float genRepairSpeed = 0.001f;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +21,15 @@ public class GeneratorStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        genRepair = Mathf.Clamp(genRepair, 0, genMaxRepair);
+
+        if (genRepairController.isNearGen)
+        {
+            genProgressBar.SetActive(true);
+        }
+        else
+        {
+            genProgressBar.SetActive(false);
+        }
     }
 }

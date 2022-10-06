@@ -24,6 +24,7 @@ public class ThirdPersonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if player is repairing generator then you can't move
         if (!genRepairController.isReparingGen)
         {
             float horizontal = Input.GetAxisRaw("Horizontal");
