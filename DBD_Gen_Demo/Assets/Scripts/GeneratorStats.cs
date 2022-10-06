@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GeneratorStats : MonoBehaviour
 {
     public GenRepairController genRepairController;
-    
+
     public GameObject genProgressBar;
     
     public float genRepair = 0f;
@@ -15,7 +16,7 @@ public class GeneratorStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        genProgressBar = transform.Find("GenCanvas").GetChild(0).gameObject;
     }
 
     // Update is called once per frame
