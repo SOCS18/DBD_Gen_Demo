@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class GeneratorStats : MonoBehaviour
 {
     public GenRepairController genRepairController;
-
+    
     public GameObject genProgressBar;
     
     public float genRepair = 0f;
