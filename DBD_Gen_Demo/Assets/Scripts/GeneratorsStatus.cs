@@ -21,6 +21,15 @@ public class GeneratorsStatus : MonoBehaviour
         {
             generators[i] = genParent.transform.GetChild(i).gameObject;
             genHealth[i] = 0;
+            genHealth[i] = Mathf.Clamp(genHealth[i], 0, 100);
+        }
+    }
+
+    private void Update()
+    {
+        for (int i = 0; i < numGenerators; i++)
+        {
+            genHealth[i] = Mathf.Clamp(genHealth[i], 0, 100);
         }
     }
 }

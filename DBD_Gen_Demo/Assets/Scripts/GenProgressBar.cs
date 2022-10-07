@@ -14,20 +14,15 @@ public class GenProgressBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        genRepair = Mathf.Clamp(genRepair, 0, genMaxRepair);
         if (genRepControl.isNearGen1)
         {
             if (Input.GetKey(KeyCode.E))
-            {
                 genStatus.genHealth[0] += genRepairSpeed;
-            }
         }
         if (genRepControl.isNearGen2)
         {
             if (Input.GetKey(KeyCode.E))
-            {
                 genStatus.genHealth[1] += genRepairSpeed;
-            }
         }
     }
 }
