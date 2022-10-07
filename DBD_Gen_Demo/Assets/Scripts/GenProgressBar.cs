@@ -1,31 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GenProgressBar : MonoBehaviour
 {
     public GenRepairController genRepControl;
-    public GeneratorStats genStats;
+    public GeneratorsStatus genStatus;
 
-    public Slider genProgressBar;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        genProgressBar = GetComponent<Slider>();
-    }
+    public float genRepair = 0;
+    public float genMaxRepair = 100;
+    public float genRepairSpeed = 0.001f;
 
     // Update is called once per frame
     void Update()
     {
-        if (genRepControl.isNearGen)
+        genRepair = Mathf.Clamp(genRepair, 0, genMaxRepair);
+        if (genRepControl.isNearGen1)
         {
             if (Input.GetKey(KeyCode.E))
             {
-                genProgressBar.value += genStats.genRepairSpeed;
+                genStatus.genHealth[0] += genRepairSpeed;
             }
         }
-        
+        if (genRepControl.isNearGen2)
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                genStatus.genHealth[1] += genRepairSpeed;
+            }
+        }
     }
 }

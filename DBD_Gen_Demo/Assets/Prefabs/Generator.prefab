@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7475327441137522933}
   - component: {fileID: 7475327441137522934}
   - component: {fileID: 7475327441137522935}
-  - component: {fileID: 7475327441137522891}
+  - component: {fileID: 148012272277459422}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Generator
@@ -102,7 +102,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7475327441137522891
+--- !u!114 &148012272277459422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,14 +111,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7475327441137522928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d19be2ef79004f44ea6d5e75e0e1f973, type: 3}
+  m_Script: {fileID: 11500000, guid: a63896c6cf2f1b94782911e04faee90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  genRepairController: {fileID: 0}
-  genProgressBarObj: {fileID: 0}
+  genRepControl: {fileID: 0}
   genRepair: 0
   genMaxRepair: 100
-  genRepairSpeed: 0.0001
+  genRepairSpeed: 0.001
 --- !u!1001 &928278492639418225
 PrefabInstance:
   m_ObjectHideFlags: 0
