@@ -1065,6 +1065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a63896c6cf2f1b94782911e04faee90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  genRepControl: {fileID: 1445330513}
+  genStats: {fileID: 827939872}
   genProgressBar: {fileID: 0}
 --- !u!1 &1096123164
 GameObject:
@@ -1647,8 +1649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b61aa389c91a3f489eb488aa8e24273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBar: {fileID: 1060105698}
-  generatorStats: {fileID: 827939872}
   isNearGen: 0
   isReparingGen: 0
   repairGenText: {fileID: 2143539194}

@@ -5,11 +5,8 @@ using UnityEngine.UI;
 
 public class GenRepairController : MonoBehaviour
 {
-    public GenProgressBar progressBar;
-    public GeneratorStats generatorStats;
-
-    public bool isNearGen;
-    public bool isReparingGen;
+    [HideInInspector] public bool isNearGen;
+    [HideInInspector] public bool isReparingGen;
 
     public GameObject repairGenText;
 
@@ -25,14 +22,10 @@ public class GenRepairController : MonoBehaviour
         if (isNearGen)
         {
             if (Input.GetKey(KeyCode.E))
-            {
                 isReparingGen = true;
-                progressBar.genProgressBar.value += generatorStats.genRepairSpeed;
-            }
             else
-            {
                 isReparingGen = false;
-            }
+
             repairGenText.SetActive(true);
         }
         else
