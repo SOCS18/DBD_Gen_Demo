@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 148012272277459422}
   m_Layer: 0
   m_Name: Generator
-  m_TagString: Generator
+  m_TagString: Generator2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 4.74}
   m_LocalScale: {x: 3, y: 2, z: 2}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 928278491758573404}
   - {fileID: 928278491587827313}
@@ -115,8 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genRepControl: {fileID: 0}
-  genRepair: 0
-  genMaxRepair: 100
+  genStatus: {fileID: 0}
   genRepairSpeed: 0.001
 --- !u!1001 &928278492639418225
 PrefabInstance:
@@ -133,9 +132,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gen_Trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 7736158234384934674, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
+      propertyPath: m_TagString
+      value: GenTrigger2
+      objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -195,21 +210,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gen_Trigger (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7736158234384934674, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
+      propertyPath: m_TagString
+      value: GenTrigger2
+      objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.33333334
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -269,21 +288,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gen_Trigger (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7736158234384934674, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
+      propertyPath: m_TagString
+      value: GenTrigger2
+      objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.33333334
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -343,21 +366,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gen_Trigger (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7736158234384934674, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
+      propertyPath: m_TagString
+      value: GenTrigger2
+      objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.33333334
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7736158234384934678, guid: da0bfdd1a886a8d4ea706a654af9f8fa, type: 3}
       propertyPath: m_LocalPosition.x

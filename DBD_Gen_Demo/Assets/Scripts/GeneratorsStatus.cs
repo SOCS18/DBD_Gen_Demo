@@ -28,8 +28,6 @@ public class GeneratorsStatus : MonoBehaviour
     private void Update()
     {
         for (int i = 0; i < numGenerators; i++)
-        {
             genHealth[i] = Mathf.Clamp(genHealth[i], 0, 100);
-        }
     }
 }

@@ -15,7 +15,7 @@ public class GenRepairController : MonoBehaviour
     {
         if (isNearGen1 || isNearGen2)
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.Mouse0))
                 isReparingGen = true;
             else
                 isReparingGen = false;

@@ -8,7 +8,8 @@ public class PlayerAnimController : MonoBehaviour
 
     [SerializeField] private Animator anim;
 
-    public bool isRunning;
+    private bool isRunning;
+    private bool isFixing;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,15 @@ public class PlayerAnimController : MonoBehaviour
             else
                 anim.SetBool("isRunning", false);
         }
-        
+
+        if (Input.GetKey(KeyCode.Mouse0))
+            isFixing = true;
+        else
+            isFixing = false;
+
+        if (isFixing)
+            anim.SetBool("isFixing", true);
+        else
+            anim.SetBool("isFixing", false);
     }
 }

@@ -7,8 +7,6 @@ public class GenProgressBar : MonoBehaviour
     public GenRepairController genRepControl;
     public GeneratorsStatus genStatus;
 
-    public float genRepair = 0;
-    public float genMaxRepair = 100;
     public float genRepairSpeed = 0.001f;
 
     // Update is called once per frame
@@ -16,12 +14,12 @@ public class GenProgressBar : MonoBehaviour
     {
         if (genRepControl.isNearGen1)
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.Mouse0))
                 genStatus.genHealth[0] += genRepairSpeed;
         }
         if (genRepControl.isNearGen2)
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.Mouse0))
                 genStatus.genHealth[1] += genRepairSpeed;
         }
     }
