@@ -9,6 +9,7 @@ TagManager:
   - GenParent
   - Generator2
   - GenTrigger2
+  - GenText
   layers:
   - Default
   - TransparentFX

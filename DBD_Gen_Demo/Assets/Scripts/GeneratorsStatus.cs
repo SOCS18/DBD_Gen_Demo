@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GeneratorsStatus : MonoBehaviour
 {
     public GameObject genParent;
     public GameObject[] generators;
     public float[] genHealth;
-    private int numGenerators;
+    public int numGenerators;
 
     // Start is called before the first frame update
     void Start()
