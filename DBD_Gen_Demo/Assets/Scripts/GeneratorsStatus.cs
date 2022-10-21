@@ -10,6 +10,8 @@ public class GeneratorsStatus : MonoBehaviour
     public float[] genHealth;
     public int numGenerators;
 
+    public int maxHealth = 100;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +24,13 @@ public class GeneratorsStatus : MonoBehaviour
         {
             generators[i] = genParent.transform.GetChild(i).gameObject;
             genHealth[i] = 0;
-            genHealth[i] = Mathf.Clamp(genHealth[i], 0, 100);
+            genHealth[i] = Mathf.Clamp(genHealth[i], 0, maxHealth);
         }
     }
 
     private void Update()
     {
         for (int i = 0; i < numGenerators; i++)
-            genHealth[i] = Mathf.Clamp(genHealth[i], 0, 100);
+            genHealth[i] = Mathf.Clamp(genHealth[i], 0, maxHealth);
     }
 }

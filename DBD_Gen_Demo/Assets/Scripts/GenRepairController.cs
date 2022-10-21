@@ -9,6 +9,7 @@ public class GenRepairController : MonoBehaviour
     [HideInInspector] public bool isReparingGen;
 
     public GameObject repairGenText;
+    public GameObject repairGenStatus; // remove later, this is just for testing
 
     // Update is called once per frame
     void Update()
@@ -21,10 +22,12 @@ public class GenRepairController : MonoBehaviour
                 isReparingGen = false;
 
             repairGenText.SetActive(true);
+            repairGenStatus.SetActive(true);
         }
         else
         {
             repairGenText.SetActive(false);
+            repairGenStatus.SetActive(false);
         }
     }
 
