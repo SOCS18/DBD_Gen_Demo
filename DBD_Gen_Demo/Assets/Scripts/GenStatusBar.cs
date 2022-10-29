@@ -19,7 +19,6 @@ public class GenStatusBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (genRepair.isNearGen1)
             slider.value = genStatus.genHealth[0];
         if (genRepair.isNearGen2)
