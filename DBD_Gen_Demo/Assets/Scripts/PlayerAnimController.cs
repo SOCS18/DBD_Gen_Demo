@@ -9,7 +9,7 @@ public class PlayerAnimController : MonoBehaviour
     [SerializeField] private Animator anim;
 
     private bool isRunning;
-    private bool isFixing;
+    [HideInInspector] public bool isFixing;
 
     // Start is called before the first frame update
     void Start()

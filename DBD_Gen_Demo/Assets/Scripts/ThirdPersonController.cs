@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class ThirdPersonController : MonoBehaviour
 {
-    public GenRepairController genRepairController;
+    public PlayerAnimController playerAnimContr;
 
-    public CharacterController controller;
+    private GenRepairController genRepairController;
+    private CharacterController controller;
     public Transform cam;
 
     public float speed = 6f;
-    public float gravity = -9.81f;
+    private float gravity = -9.81f;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
@@ -42,7 +43,7 @@ public class ThirdPersonController : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
         
         // if player is repairing generator then you can't move
-        if (!genRepairController.isReparingGen)
+        if (!genRepairController.isReparingGen || !playerAnimContr.isFixing)
         {
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
