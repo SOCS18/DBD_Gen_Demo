@@ -22,6 +22,8 @@ public class ThirdPersonController : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
+
+    public bool isCrouching;
     
     // Start is called before the first frame update
     void Start()
@@ -41,9 +43,14 @@ public class ThirdPersonController : MonoBehaviour
         // INCLUDE GRAVITY
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-        
+
+        if (Input.GetKey(KeyCode.Mouse0))
+            isCrouching = true;
+        else
+            isCrouching = false;
+
         // if player is repairing generator then you can't move
-        if (!genRepairController.isReparingGen || !playerAnimContr.isFixing)
+        if (!genRepairController.isReparingGen && !isCrouching)
         {
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
@@ -60,5 +67,7 @@ public class ThirdPersonController : MonoBehaviour
                 controller.Move(moveDir.normalized * speed * Time.deltaTime);
             }
         }
+
+        
     }
 }
