@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 421}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 98
+  controlID: 76
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 104
+  controlID: 82
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 105
+  controlID: 83
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -382,21 +382,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\GitHub\DBD_Gen_Demo\DBD_Gen_Demo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 005f0000
-    m_LastClickedID: 24320
+    m_SelectedIDs: fc5e0000
+    m_LastClickedID: 24316
     m_ExpandedIDs: 00000000f05e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -553,8 +553,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a65c0000
-      m_LastClickedID: 23718
+      m_SelectedIDs: 4e5c0000
+      m_LastClickedID: 23630
       m_ExpandedIDs: 1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -804,9 +804,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.26179522, y: 2.2092743, z: 2.3698409}
+    m_Target: {x: -0.8192171, y: 1.9564108, z: 3.9551318}
     speed: 2
-    m_Value: {x: 0.26179522, y: 2.2092743, z: 2.3698409}
+    m_Value: {x: -0.8192171, y: 1.9564108, z: 3.9551318}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -853,13 +853,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.097021505, y: 0.65320486, z: -0.084939726, w: -0.74611694}
+    m_Target: {x: -0.10479115, y: 0.32963902, z: -0.036844432, w: -0.93754643}
     speed: 2
-    m_Value: {x: -0.09702175, y: 0.65320647, z: -0.08493994, w: -0.7461188}
+    m_Value: {x: -0.10479147, y: 0.32964003, z: -0.036844544, w: -0.9375493}
   m_Size:
-    m_Target: 2.1967351
+    m_Target: 3.458214
     speed: 2
-    m_Value: 2.1967351
+    m_Value: 3.458214
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -998,7 +998,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 632
-    width: 851
+    width: 1465
     height: 367
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
